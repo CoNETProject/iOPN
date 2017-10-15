@@ -1,0 +1,27 @@
+{
+	"name": "qtgate_i_opn",
+	"version": "0.1.1",
+	"license": "MIT",
+	"description": "iOPN server and client",
+	"scripts": {
+		"server": "node ./server",
+		"client": "node ./client"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/QTGate/atOPN.git"
+	},
+	"author": {
+		"name": "QTGate Systems Inc.",
+		"email": "info@QTGate.com"
+	},
+	"bugs": {
+		"url": "https://github.com/QTGate/QTGate-Desktop-Client/issues"
+	},
+	"homepage": "https://www.qtgate.com",
+	"dependencies": {
+		"async": "^2.5.0",
+		"node-uuid": "^1.4.8",
+		"portastic": "^1.0.1"
+	}
+}
