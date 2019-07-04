@@ -1,27 +1,31 @@
 {
-	"name": "qtgate_i_opn",
-	"version": "0.1.3",
-	"license": "MIT",
-	"description": "iOPN server and client",
-	"scripts": {
-		"server": "node ./server",
-		"client": "node ./client"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/QTGate/iOPN.git"
-	},
-	"author": {
-		"name": "QTGate Systems Inc.",
-		"email": "info@QTGate.com"
-	},
-	"bugs": {
-		"url": "https://github.com/QTGate/iOPN/issues"
-	},
-	"homepage": "https://www.qtgate.com",
-	"dependencies": {
-		"async": "^2.5.0",
-		"node-uuid": "^1.4.8",
-		"portastic": "^1.0.1"
-	}
+  "name": "qtgate_i_opn",
+  "version": "0.1.3",
+  "license": "MIT",
+  "description": "iOPN server and client",
+  "scripts": {
+    "server": "node ./server",
+    "client": "node ./client",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QTGate/iOPN.git"
+  },
+  "author": {
+    "name": "QTGate Systems Inc.",
+    "email": "info@QTGate.com"
+  },
+  "bugs": {
+    "url": "https://github.com/QTGate/iOPN/issues"
+  },
+  "homepage": "https://www.qtgate.com",
+  "dependencies": {
+    "async": "^2.5.0",
+    "node-uuid": "^1.4.8",
+    "portastic": "^1.0.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
